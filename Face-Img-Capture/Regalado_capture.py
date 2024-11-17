@@ -99,14 +99,16 @@ def cleanup():
     cv2.destroyAllWindows()
     root.destroy()
 
-# GUI
+# GUI buttons
 button_frame = tk.Frame(root)
 button_frame.pack(pady=20)
 
+# This is the start button to capture 50 images
 start_button = tk.Button(button_frame, text="Start", command=start_capture, 
                         width=10, height=2, font=('Arial', 10), bg='green', disabledforeground='grey')
 start_button.pack(side=tk.LEFT, padx=10)
 
+# This is the exit button to close the program
 exit_button = tk.Button(button_frame, text="Exit", command=cleanup, 
                        width=10, height=2, font=('Arial', 10), bg='red')
 exit_button.pack(side=tk.LEFT, padx=10)
